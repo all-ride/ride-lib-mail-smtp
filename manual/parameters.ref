@@ -1,0 +1,5 @@
+"mail.smtp.host": "127.0.0.1",
+"mail.smtp.port": "1025",
+"mail.smtp.security": false,
+"mail.smtp.username": "",
+"mail.smtp.password": ""

@@ -1,0 +1,10 @@
+{
+    "name": "ride/lib-mail-smtp",
+    "description": "Integration of the mail library for a Ride application.",
+    "license": "MIT",
+
+    "require": {
+        "ride/lib-mail": "^1.0.0",
+        "phpmailer/phpmailer": "^v6.8.0"
+    }
+}

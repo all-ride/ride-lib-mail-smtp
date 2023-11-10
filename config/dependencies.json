@@ -1,0 +1,95 @@
+{
+    "dependencies": [
+        {
+            "interfaces": "ride\\library\\mail\\transport\\Transport",
+            "class": "ride\\library\\mail\\transport\\SmtpTransport",
+            "id": "smtp",
+            "calls": [
+                {
+                    "method": "__construct",
+                    "arguments": [
+                        {
+                            "name": "log",
+                            "type": "dependency",
+                            "properties": {
+                                "interface": "ride\\library\\log\\Log"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "method": "setHost",
+                    "arguments": [
+                        {
+                            "name": "host",
+                            "type": "parameter",
+                            "properties": {
+                                "key": "mail.smtp.host"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "method": "setPort",
+                    "arguments": [
+                        {
+                            "name": "port",
+                            "type": "parameter",
+                            "properties": {
+                                "key": "mail.smtp.port"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "method": "setUsername",
+                    "arguments": [
+                        {
+                            "name": "username",
+                            "type": "parameter",
+                            "properties": {
+                                "key": "mail.smtp.username"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "method": "setPassword",
+                    "arguments": [
+                        {
+                            "name": "password",
+                            "type": "parameter",
+                            "properties": {
+                                "key": "mail.smtp.password"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "method": "setSecurity",
+                    "arguments": [
+                        {
+                            "name": "security",
+                            "type": "parameter",
+                            "properties": {
+                                "key": "mail.smtp.security"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "method": "setDebugTo",
+                    "arguments": [
+                        {
+                            "name": "to",
+                            "type": "parameter",
+                            "properties": {
+                                "key": "mail.debug"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
